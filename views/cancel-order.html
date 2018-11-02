@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script type="text/javascript" src="javascripts/index.js"></script>
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <title></title>
-  </head>
+  <%- include('template/head'); -%>
   <body>
 
-    <%- include('header'); -%>
+    <%- include('template/header'); -%>
 
     <div class="container-main">
       <div class="container-form">
@@ -43,9 +32,9 @@
       </div>
     </div>
 
-    <%- include('header-mobile'); -%>
+    <%- include('template/header-mobile'); -%>
 
-    <%- include('modal-detect'); -%>
+    <%- include('template/modal-detect'); -%>
 
   </body>
 </html>
