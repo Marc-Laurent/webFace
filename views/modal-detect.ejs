@@ -1,0 +1,43 @@
+<!--  MODAL DETECTION FACE ---------->
+<div class="modal modal-md" hidden id="face"><a class="modal-overlay" href="#modal-face-close" aria-label="Close"></a>
+  <div class="modal-container" role="document">
+    <div class="modal-header"><a class="btn btn-clear float-right" href="#modal-face-close" aria-label="Close"></a>
+      <div class="modal-title h5">Détection du visage</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <div class="container">
+          <div class="input-group">
+            <input  type="url" class="form-input" name="inputImage" id="inputImage" value="" placeholder="https://upload.wikimedia.org/wikipedia/commons/c/c3/RH_Louise_Lillian_Gish.jpg">
+            <button class="btn btn-primary input-group-btn btn-detect">Lancer</button>
+          </div>
+        </div>
+        <div class="loading loading-lg" hidden></div>
+        <div id="wrapper-error" hidden style="text-align: center;">
+          <label class="error-label" for="">Pas de visage détecté</label>
+          <div class="error-container">
+
+          </div>
+        </div>
+        <div id="wrapper" class="" hidden>
+            <div  id="jsonOutput" class="form-group column">
+              <label class="form-label" for="age">Age</label>
+
+              <p id="response_age" name="age" class="age"></p>
+
+              <label class="form-label" for="sexe">Sexe</label>
+
+              <p id="response_sexe" name="sexe" class="sexe"></p>
+            </div>
+            <div id="imageDiv" class="form-group column">
+                <label class="form-label" for="sourceImage">Source</label>
+                <img id="sourceImage" name="sourceImage" width="80%" />
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-link" href="#modal-face-close" aria-label="Close">Fermer</a>
+    </div>
+  </div>
+</div>

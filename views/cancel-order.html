@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="javascripts/index.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title></title>
+  </head>
+  <body>
+
+    <%- include('header'); -%>
+
+    <div class="container-main">
+      <div class="container-form">
+
+        <div class="col-md-12 container-head text-center">
+          <i class="fa fa-ban error" aria-hidden="true"></i>
+          <h3>Annulation confirmée</h3>
+        </div>
+
+        <div class="container">
+            <div class="col-md-12  text-center">
+              <p>Votre annulation pour l'adresse</p>
+            </div>
+            <div class="col-md-12  text-center">
+              <span class="badge" data-badge="Position de départ"></span>
+            </div>
+            <div class="col-md-12  text-center">
+              <p>a bien été prise en compte</p>
+            </div>
+
+          <div class="col-3 col-center col-mx-auto">
+            <a class="btn btn-lg" href="accueil">Retour</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <%- include('header-mobile'); -%>
+
+    <%- include('modal-detect'); -%>
+
+  </body>
+</html>
